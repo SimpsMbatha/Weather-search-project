@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  background-attachment: fixed;
+  color: white;
+}
+.container {
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  margin: 80px 400px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.search-input {
+  width: 75%;
+  padding: 10px 5px;
+  border-style: none;
+  border-radius: 10px;
+}
+.search-button {
+  width: 20%;
+  border-style: none;
+  background-color: #b8dcff;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
