@@ -3,6 +3,13 @@ function displayWeather(response) {
   let temperatureNumber = document.querySelector("#temp-number");
   let temperature = response.data.temperature.current;
   let cityHeading = document.querySelector("#city-heading");
+  let cityCondition = document.querySelector("#city-condition");
+  let cityHumidity = document.querySelector("#city-humidity");
+  let cityWind = document.querySelector("#city-wind");
+
+  cityWind.innerHTML = response.data.wind.speed;
+  cityHumidity.innerHTML = response.data.temperature.humidity;
+  cityCondition.innerHTML = response.data.condition.description;
   cityHeading.innerHTML = response.data.city;
   temperatureNumber.innerHTML = Math.round(temperature);
 }
