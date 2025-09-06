@@ -1,12 +1,27 @@
 //search engine functionality
+function displayWeather(response) {
+  let temperatureNumber = document.querySelector("#temp-number");
+  let temperature = response.data.temperature.current;
+  let cityHeading = document.querySelector("#city-heading");
+  cityHeading.innerHTML = response.data.city;
+  temperatureNumber.innerHTML = Math.round(temperature);
+}
+
+function searchCity(city) {
+  let apiKey = "a9ob0c158e1219c4tfb120a3faf56baf";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayWeather);
+}
+
 function submitCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
-  let cityHeading = document.querySelector("#city-heading");
-  cityHeading.innerHTML = searchInput.value;
+  searchCity(searchInput.value);
 }
 let formButton = document.querySelector("#search-form");
 formButton.addEventListener("submit", submitCity);
+
+searchCity("London");
 
 //time display
 let now = new Date();

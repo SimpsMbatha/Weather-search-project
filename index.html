@@ -15,27 +15,34 @@
   <body>
     <div class="container">
       <header>
-        <form action="">
+        <form action="" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-input"
+            id="search-input"
           />
-          <input type="submit" value="Search" class="search-button" />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
         </form>
       </header>
       <hr />
-      <h1>Pretoria</h1>
+      <h1 id="city-heading">Pretoria</h1>
       <main>
         <div class="main-content">
           <div class="temperature">
-            <span class="temp-emoji">🌥</span><span class="temp-number">12</span
+            <span class="temp-emoji">🌥</span
+            ><span class="temp-number" id="temp-number">12</span
             ><span class="temp-units">°C</span>
           </div>
           <div class="details">
             <p>
-              Friday 15:20 <br />
+              <span id="time">Friday 15:20</span> <br />
               Scattered clouds <br />
               Humidity: <strong>66%</strong> <br />
               Wind: <strong>3.13km/h</strong>
@@ -50,5 +57,6 @@
         <a href="#">Netlify.</a>
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
