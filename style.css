@@ -73,3 +73,26 @@ strong {
 footer {
   color: rgba(128, 128, 128, 0.7);
 }
+.forecast {
+  display: flex;
+  justify-content: space-around;
+}
+.forecast-day {
+  text-align: center;
+}
+.forecast-temperature {
+  display: flex;
+  justify-content: space-between;
+}
+.forecast-temp {
+  display: inline-block;
+  margin-right: 8px;
+  font-weight: 900;
+}
+.forecast-icon {
+  font-size: 38px;
+}
+.forecast-date {
+  color: #2470a0;
+  font-weight: 900;
+}
