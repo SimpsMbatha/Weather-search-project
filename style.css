@@ -43,7 +43,7 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 .temp-emoji {
-  font-size: 40px;
+  width: 120px;
 }
 .temp-number {
   font-size: 70px;
@@ -90,7 +90,7 @@ footer {
   font-weight: 900;
 }
 .forecast-icon {
-  font-size: 38px;
+  width: 60px;
 }
 .forecast-date {
   color: #2470a0;
